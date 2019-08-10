@@ -1,5 +1,5 @@
 function printName(message) {
-    var outputDiv = document.getElementById("'" + name + "'");
+    var outputDiv = document.getElementById("name);
     outputDiv.innerHTML = message;
 }
 function printPosition(message) {
@@ -29,7 +29,7 @@ if (pic === "dog") {
 var name = prompt("Please choose a player name:");
 var position = prompt("Please choose a player position:");
 var team = prompt("Please choose a team name:");
-var color = prompt("Please choose between yellow, red, blue, green, black, orange, or purple:")
+var color = prompt("Please choose between yellow, red, blue, green, black, orange, or purple:");
 var pic = prompt("Please choose dog or cat:");
 
 
