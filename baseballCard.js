@@ -1,5 +1,3 @@
-document.addEventListener("DOMContentLoaded", function(event) { 
-
 var name = prompt("Please choose a player name:");
 var position = prompt("Please choose a player position:");
 var number = prompt("Please choose a number:");
@@ -9,8 +7,12 @@ var pic = prompt("Please choose dog, cat, or monkey:");
 var idKey = ['name', 'position', 'number', 'team'];
 var inputKey = [name, position, number, team];
 
+var toggle  = document.getElementById("toggle");
+var content = document.getElementById("content");
 
-function printPic() {
+
+
+function addPic() {
 if (pic === "dog") {
     document.getElementById("card-container").style.background = "url('dog2.jpg') no-repeat center";
 } else if (pic ==="cat"){
@@ -19,7 +21,7 @@ if (pic === "dog") {
     document.getElementById("card-container").style.background = "url('monkey.jpg') no-repeat center";
     }
 }
-function printColor() {
+function addColor() {
     if(color === "black" || color === "purple" || color === "blue") {
         document.getElementById("border-container").style.color = "white";
     };
@@ -34,9 +36,12 @@ function addText() {
 
 
 
-printPic();
-printColor();
+addPic();
+addColor();
 addText();
+toggle.addEventListener("click", function() {
+  content.classList.toggle("show");
+});
 
 
 });
