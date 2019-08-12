@@ -1,3 +1,5 @@
+document.addEventListener("DOMContentLoaded", function(event) { 
+
 var name = prompt("Please choose a player name:");
 var position = prompt("Please choose a player position:");
 var number = prompt("Please choose a number:");
@@ -35,3 +37,6 @@ function addText() {
 printPic();
 printColor();
 addText();
+
+
+});
