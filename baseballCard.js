@@ -43,5 +43,3 @@ toggle.addEventListener("click", function() {
   content.classList.toggle("show");
 });
 
-
-});
