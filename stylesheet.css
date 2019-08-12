@@ -6,19 +6,21 @@
 
 
 
+#content {
+    display: none;
+}
 
-body {
-    height: 100vh;
+#content.show {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0px auto;
     font-family: "BioRhyme";
+    flex-direction: column;
+    
 }
 
-
-
-.card {
+#card {
     border: 3px solid black;
     border-radius: 5px;
     height: 520px;
@@ -114,4 +116,3 @@ body {
     color: black;
 
 }
-
