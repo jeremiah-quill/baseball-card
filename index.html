@@ -6,7 +6,35 @@
         <link href="https://fonts.googleapis.com/css?family=BioRhyme:800&display=swap" rel="stylesheet">
     </head>
     <body>
-        <button id="toggle">Generate Card</button>
+        <div id='monster-wrapper'>
+        <div class='main-input-wrapper'>
+            <div class='description-input-wrapper'>
+                <div class='input-wrapper'>
+                   <div class='form-input'>Player Name:</div>
+                   <div class='form-input'>Position:</div>
+                   <div class='form-input'>Number:</div>
+                   <div class='form-input'>Team:</div>
+                   <div class='form-input'>Color:</div>
+                </div>
+                <div class='input-wrapper'>
+                   <input id='inputName' type='text'>
+                   <input id='inputPosition' type='text'>
+                   <input id='inputNumber' type='text'>
+                   <input id='inputTeam' type='text'>
+                   <input id='inputColor' type='text'>
+                </div>
+            </div>
+      
+            <form>
+           <p>Animal:</p>
+            <div class='radio-container'>
+                <input id = 'dogRadio' type="radio" name="animal" value="dog"> Dog<br>
+                <input id = 'catRadio' type="radio" name="animal" value="cat"> Cat<br>
+                <input id = 'monkeyRadio' type="radio" name="animal" value="monkey"> Monkey<br>  
+            </div>
+            </form>
+            <button id='button'>Create your card</button>
+        </div>
         <div id="content">
             <div id="card">
                 <div id="border-container">          
@@ -26,6 +54,7 @@
                 </div>
             </div>
         </div>
+            </div>
         <script src="baseballCard.js"></script>
     </body>
 </html>
