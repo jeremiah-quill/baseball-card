@@ -94,7 +94,7 @@ body {
     text-align: center;
     font-size: 17px;
     color: black;
-    font-family: "painter";
+    font-family: "painter", 'BioRhyme';
 }
 
 #number {
