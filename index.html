@@ -7,54 +7,49 @@
     </head>
     <body>
         <div id='monster-wrapper'>
-        <div class='main-input-wrapper'>
-            <div class='description-input-wrapper'>
+            <div class='main-input-wrapper'>
                 <div class='input-wrapper'>
-                   <div class='form-input'>Player Name:</div>
-                   <div class='form-input'>Position:</div>
-                   <div class='form-input'>Number:</div>
-                   <div class='form-input'>Team:</div>
-                   <div class='form-input'>Color:</div>
+                    <label for='inputName'>Player Name:</label>
+                    <input id='inputName' type='text'>
+                    <label for='inputName'>Position:</label>
+                    <input id='inputPosition' type='text'>
+                    <label for='inputName'>Number:</label>
+                    <input id='inputNumber' type='text'>
+                    <label for='inputName'>Team Name:</label>
+                    <input id='inputTeam' type='text'>
+                    <label for='inputName'>Team Color:</label>
+                    <input id='inputColor' type='text'>
                 </div>
-                <div class='input-wrapper'>
-                   <input id='inputName' type='text'>
-                   <input id='inputPosition' type='text'>
-                   <input id='inputNumber' type='text'>
-                   <input id='inputTeam' type='text'>
-                   <input id='inputColor' type='text'>
-                </div>
+                <form>
+                    <p>Animal:</p>
+                    <div class='radio-container'>
+                        <input id = 'dogRadio' type="radio" name="animal" value="dog"> Dog<br>
+                        <input id = 'catRadio' type="radio" name="animal" value="cat"> Cat<br>
+                        <input id = 'monkeyRadio' type="radio" name="animal" value="monkey"> Monkey<br>  
+                    </div>
+                </form>
+                <button id='button'>Create your card</button>
             </div>
-      
-            <form>
-           <p>Animal:</p>
-            <div class='radio-container'>
-                <input id = 'dogRadio' type="radio" name="animal" value="dog"> Dog<br>
-                <input id = 'catRadio' type="radio" name="animal" value="cat"> Cat<br>
-                <input id = 'monkeyRadio' type="radio" name="animal" value="monkey"> Monkey<br>  
-            </div>
-            </form>
-            <button id='button'>Create your card</button>
-        </div>
-        <div id="content">
-            <div id="card">
-                <div id="border-container">          
-                    <div id="card-container">
-                        <div id="number"></div>
-                        <div class="info-bar">
-                            <div class="baseball-container">
-                                <img class="baseball-img" src="baseball.png">
-                                <div id="team"></div>
-                            </div>
-                            <div id="name-position">
-                                <div id="name"></div>
-                                <div id="position"></div>
+            <div id="content">
+                <div id="card">
+                    <div id="border-container">          
+                        <div id="card-container">
+                            <div id="number"></div>
+                            <div class="info-bar">
+                                <div class="baseball-container">
+                                    <img class="baseball-img" src="baseball.png">
+                                    <div id="team"></div>
+                                </div>
+                                <div id="name-position">
+                                    <div id="name"></div>
+                                    <div id="position"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-            </div>
         <script src="baseballCard.js"></script>
     </body>
 </html>
