@@ -1,45 +1,29 @@
-var name = prompt("Please choose a player name:");
-var position = prompt("Please choose a player position:");
-var number = prompt("Please choose a number:");
-var team = prompt("Please choose a team name:");
-var color = prompt("Please choose between yellow, red, blue, green, black, orange, or purple:");
-var pic = prompt("Please choose dog, cat, or monkey:");
-var idKey = ['name', 'position', 'number', 'team'];
-var inputKey = [name, position, number, team];
+const color = document.getElementById('border-container');
+const pic = document.getElementById('card-container');
+const dogRadio = document.getElementById('dogRadio');
+const catRadio = document.getElementById('catRadio');
+const monkeyRadio = document.getElementById('monkeyRadio');
+const textArray = ['inputName', 'inputPosition', 'inputNumber', 'inputTeam'];
+const keyArray = ['name', 'position', 'number', 'team']
+const button = document.getElementById('button');
 
-var toggle  = document.getElementById("toggle");
-var content = document.getElementById("content");
-
-
-
-function addPic() {
-if (pic === "dog") {
-    document.getElementById("card-container").style.background = "url('dog2.jpg') no-repeat center";
-} else if (pic ==="cat"){
-    document.getElementById("card-container").style.background = "url('cat.jpg') no-repeat center";
-} else {
-    document.getElementById("card-container").style.background = "url('monkey.jpg') no-repeat center";
-    }
-}
-function addColor() {
-    if(color === "black" || color === "purple" || color === "blue") {
-        document.getElementById("border-container").style.color = "white";
+button.addEventListener('click', () => {
+    let i=0;
+    for (i=0; i<textArray.length; i+=1) {
+        const text = document.getElementById(textArray[i]);
+        const key = document.getElementById(keyArray[i]);
+        key.innerHTML = text.value;
     };
-    document.getElementById("border-container").style.backgroundColor = color;
+    
+    color.style.backgroundColor = inputColor.value;
+    
+    if(dogRadio.checked) {
+    pic.style.background = "url('dog2.jpg') no-repeat center";
 }
-function addText() {
-    for (i=0; i < idKey.length; i += 1) {
-        var outputDiv=document.getElementById(idKey[i]);
-        outputDiv.innerHTML = inputKey[i];
-        }
+    else if (catRadio.checked) {
+    pic.style.background = "url('cat.jpg') no-repeat center";
 }
-
-
-
-addPic();
-addColor();
-addText();
-toggle.addEventListener("click", function() {
-  content.classList.toggle("show");
+    else {
+    pic.style.background = "url('monkey.jpg') no-repeat center";
+}
 });
-
