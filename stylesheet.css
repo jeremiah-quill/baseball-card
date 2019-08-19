@@ -4,20 +4,21 @@
 }
 
 
+#monster-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    margin: 0px 400px;
 
-
-#content {
-    display: none;
 }
 
-#content.show {
-    display: flex;
+#content {
+     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0px auto;
     font-family: "BioRhyme";
     flex-direction: column;
-    
 }
 
 #card {
@@ -28,10 +29,7 @@
     display: flex;
     justify-content: center;
     background-color: cornsilk;
-/*    position: relative;*/
-    
 }
-
 
 #border-container {
     border: 3px solid black;
@@ -42,7 +40,6 @@
     position: relative;
 }
 
-
 #card-container {
     border: 3px solid black;
     border-radius: 20px;
@@ -50,7 +47,6 @@
     margin: 10px 10px 70px;
     width: 100%;
     position: relative;
-/*    background-image: url("https://via.placeholder.com/264x354");*/
 }
 
 .baseball-img {
@@ -59,13 +55,11 @@
 }
 
 .info-bar {
-/*    display: flex;*/
     margin-top: 310px;
     width: 100%;
 }
 
 #name-position {
-/*    width: 100%;*/
     margin-top: 45px;
     margin-left: 100px;
 }
@@ -81,13 +75,9 @@
     font-size: 13px;
 }
 
-
 .baseball-container{
     position: relative;
 }
-
-
-
 
 #team {
     position: absolute;
@@ -114,5 +104,49 @@
     justify-content: center;
     align-items: center;
     color: black;
+}
 
+
+
+/*********** FORM STYLING ************/
+
+#button {
+    margin-top: 20px;
+}
+
+.input-wrapper input {
+/*    display: block;*/
+       margin-top: 10px;
+}
+
+.form-input {
+    flex-basis: 50%;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.description-input-wrapper {
+    display: flex;
+}
+
+.main-input-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+p {
+    margin: 10px 0px 0px;
+}
+
+.radio-container {
+    margin-left: 50px;
 }
