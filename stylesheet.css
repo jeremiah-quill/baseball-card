@@ -3,18 +3,24 @@
     src: url("Painter_PERSONAL_USE_ONLY.ttf");
 }
 
+body {
+    display: flex;
+    justify-content: center;
+    margin: 0px auto;
+    background: url('ballparkBG.png') no-repeat center;
+}
 
 #monster-wrapper {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     height: 100vh;
-    margin: 0px 400px;
-
+    width: 70%;
+    flex-wrap: wrap;
 }
 
 #content {
-     display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     font-family: "BioRhyme";
@@ -114,9 +120,13 @@
     margin-top: 20px;
 }
 
-.input-wrapper input {
-/*    display: block;*/
+.input-wrapper label {
        margin-top: 10px;
+        font-weight: bold;
+}
+
+.input-wrapper input {
+    width: 75%;
 }
 
 .form-input {
@@ -141,12 +151,15 @@
     border: 2px solid black;
     border-radius: 10px;
     padding: 20px;
+    background-color: rgba(255,99,71,.7)
 }
 
 p {
     margin: 10px 0px 0px;
+    font-weight: bold;
 }
 
 .radio-container {
     margin-left: 50px;
+    font-weight: bold;
 }
