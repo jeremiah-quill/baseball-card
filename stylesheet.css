@@ -21,10 +21,11 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    box-shadow: 2px 2px 5px 
 }
 
 #card {
-    border: 3px solid black;
+    border: 2px solid black;
     border-radius: 5px;
     height: 520px;
     width: 370px;
@@ -34,7 +35,7 @@ body {
 }
 
 #border-container {
-    border: 3px solid black;
+    border: 2px solid black;
     border-radius: 20px;
     display: flex;
     margin: 40px;
@@ -43,7 +44,7 @@ body {
 }
 
 #card-container {
-    border: 3px solid black;
+    border: 2px solid black;
     border-radius: 20px;
     display: flex;
     margin: 10px 10px 70px;
@@ -93,7 +94,7 @@ body {
 
 #number {
     border-radius: 50%;
-    border: 3px solid black;
+    border: 2px solid black;
     height: 50px;
     width: 50px;
     position: absolute;
@@ -112,6 +113,13 @@ body {
 
 #button {
     margin-top: 20px;
+    padding: 10px;
+    font-weight: bold;
+    font-family: 'BioRhyme';
+    background-color: lightgray;
+    border: none;
+    text-decoration: none;
+    border-radius: 6px;
 }
 
 .input-wrapper label {
@@ -120,12 +128,7 @@ body {
 
 .input-wrapper input {
     width: 75%;
-}
-
-.form-input {
-    flex-basis: 50%;
-    margin-top: 10px;
-    margin-right: 10px;
+    border-radius: 5px;
 }
 
 .input-wrapper {
@@ -144,7 +147,8 @@ body {
     border: 2px solid black;
     border-radius: 10px;
     padding: 20px;
-    background-color: rgba(255,99,71,.7)
+    background-color: rgba(255,99,71,.7);
+    box-shadow: 2px 2px 5px
 }
 
 p {
