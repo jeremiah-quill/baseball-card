@@ -7,6 +7,7 @@ const textArray = ['inputName', 'inputPosition', 'inputNumber', 'inputTeam'];
 const keyArray = ['name', 'position', 'number', 'team']
 const button = document.getElementById('button');
 
+
 button.addEventListener('click', () => {
     let i=0;
     for (i=0; i<textArray.length; i+=1) {
@@ -20,10 +21,10 @@ button.addEventListener('click', () => {
     if(dogRadio.checked) {
     pic.style.background = "url('dog2.jpg') no-repeat center";
 }
-    else if (catRadio.checked) {
+    if (catRadio.checked) {
     pic.style.background = "url('cat.jpg') no-repeat center";
 }
-    else {
+    if (monkeyRadio.checked){
     pic.style.background = "url('monkey.jpg') no-repeat center";
 }
-});
+})
