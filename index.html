@@ -10,14 +10,14 @@
             <div class='main-input-wrapper'>
                 <div class='input-wrapper'>
                     <label for='inputName'>Player Name:</label>
-                    <input id='inputName' type='text'>
-                    <label for='inputName'>Position:</label>
-                    <input id='inputPosition' type='text'>
-                    <label for='inputName'>Number:</label>
-                    <input id='inputNumber' type='text'>
-                    <label for='inputName'>Team Name:</label>
-                    <input id='inputTeam' type='text'>
-                    <label for='inputName'>Team Color:</label>
+                    <input class='inputs' type='text'>
+                    <label for='inputPosition'>Position:</label>
+                    <input class='inputs' type='text'>
+                    <label for='inputNumber'>Number:</label>
+                    <input class='inputs' type='text'>
+                    <label for='inputTeam'>Team Name:</label>
+                    <input class='inputs' type='text'>
+                    <label for='inputColor'>Team Color:</label>
                     <input id='inputColor' type='text'>
                 </div>
                 <form>
@@ -33,25 +33,24 @@
                 </form>
                 <button id='button'>Create your card</button>
             </div>
-            <div id="content">
                 <div id="card">
                     <div id="border-container">          
                         <div id="card-container">
-                            <div id="number"></div>
+                            <div id="number">#</div>
                             <div class="info-bar">
                                 <div class="baseball-container">
                                     <img class="baseball-img" src="baseball.png">
-                                    <div id="team"></div>
+                                    <div id="team">Team</div>
                                 </div>
                                 <div id="name-position">
-                                    <div id="name"></div>
-                                    <div id="position"></div>
+                                    <div id="name">Name</div>
+                                    <div id="position">Position</div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+             <button id="resetButton">Make another</button>
         </div>
         <script src="baseballCard.js"></script>
     </body>
