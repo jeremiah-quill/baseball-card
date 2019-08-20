@@ -27,7 +27,7 @@ button.addEventListener('click', () => {
     pic.style.background = "url('cat.jpg') no-repeat center";
 }
     if (monkeyRadio.checked){
-    pic.style.background = "url('monkey.jpg') no-repeat center";
+    pic.style.background = "url('monkey3.jpg') no-repeat";
 }
     card.style.display='flex';
     inputWrapper.style.display='none';
