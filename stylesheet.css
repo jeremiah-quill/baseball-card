@@ -5,47 +5,41 @@ body {
     background: url('ballparkBG.png') no-repeat center;
     font-family: 'BioRhyme';
     font-weight: bold;
+    height: 100vh;
+    align-items: center;
 }
 
 #monster-wrapper {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    height: 100vh;
-    width: 70%;
-    flex-wrap: wrap;
-}
-
-#content {
-    display: flex;
     justify-content: center;
-    align-items: center;
+    width: 70%;
+    height: 75%;
     flex-direction: column;
-    box-shadow: 2px 2px 5px 
 }
 
 #card {
-    border: 2px solid black;
-    border-radius: 5px;
+/*    border: 2px solid black;*/
+    border-radius: 2px;
     height: 520px;
-    width: 370px;
-    display: flex;
-    justify-content: center;
+    width: 350px;
+    display: none;
     background-color: cornsilk;
+    box-shadow: 2px 2px 5px; 
 }
 
 #border-container {
-    border: 2px solid black;
+/*    border: 2px solid black;*/
     border-radius: 20px;
     display: flex;
     margin: 40px;
     width: 100%;
-    position: relative;
+    background-color: tomato;
 }
 
 #card-container {
-    border: 2px solid black;
-    border-radius: 20px;
+/*    border: 2px solid black;*/
+    border-radius: 15px;
     display: flex;
     margin: 10px 10px 70px;
     width: 100%;
@@ -63,7 +57,7 @@ body {
 }
 
 #name-position {
-    margin-top: 45px;
+    margin-top: 49px;
     margin-left: 100px;
 }
 
@@ -111,7 +105,7 @@ body {
 
 /*********** FORM STYLING ************/
 
-#button {
+button {
     margin-top: 20px;
     padding: 10px;
     font-weight: bold;
@@ -144,11 +138,11 @@ body {
     display: flex;
     flex-direction: column;
     width: 300px;
-    border: 2px solid black;
+/*    border: 2px solid black;*/
     border-radius: 10px;
     padding: 20px;
     background-color: rgba(255,99,71,.7);
-    box-shadow: 2px 2px 5px
+    box-shadow: 2px 2px 5px;
 }
 
 p {
@@ -158,3 +152,8 @@ p {
 .radio-container {
     margin-left: 50px;
 }
+
+#resetButton {
+display: none;
+}
+
