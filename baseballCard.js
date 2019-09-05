@@ -9,6 +9,7 @@ const textArray = document.querySelectorAll('.inputs');
 const card = document.querySelector('#card');
 const inputWrapper = document.querySelector('.main-input-wrapper');
 const resetButton = document.querySelector('#resetButton');
+const audio = document.querySelector('#audio')
 
 button.addEventListener('click', () => {
     let i=0;
@@ -29,6 +30,7 @@ button.addEventListener('click', () => {
     if (monkeyRadio.checked){
     pic.style.background = "url('monkey3.jpg') no-repeat";
 }
+    audio.play();
     card.style.display='flex';
     inputWrapper.style.display='none';
     resetButton.style.display='block';
